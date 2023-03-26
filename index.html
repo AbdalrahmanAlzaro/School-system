@@ -15,50 +15,49 @@
     </nav>
   </header>
   <main>
-    <div class="form-container">
-      <h2>Add New Student</h2>
-      <form id="infoForm">
-        <label for="full-name">Full Name:</label>
-        <input type="text" id="full-Name" name="Full-Name" required>
+    <form id="datasub" >
+      <h3>Add students informations</h3>
+        <div class="inputs">
+        <input id="username"   name="username"   placeholder="Full name"     type="text" id="name_link0" required>  
         
-        <label for="date">Date of Birth:</label>
-        <input type="date" id="date" name="Birth" required>
+        <input id="usernumber" name="usernumber" placeholder="phone number"  type="text" id="category_0" required>
+        <input id="usergrade"  name="usergrade"  placeholder="grade"         type="text" id="category_0" required>
+        <input id="userDOB"    name="userDOB"    placeholder="Date of birth" type="date" id="link_add_0" required>
 
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
+        <select id="usergender"  name="usergender" > 
+          <option value="male">male</option>
+          <option value="female">female</option>
+          </select>
+          <select id="usermajor"  name="usermajor" > 
+            <option value="Administration">Administration</option>
+            <option value="IT">IT</option>
+            <option value="Science">Science</option>
+            <option value="Art">Art</option>
+            </select>
+            
+            <input id="userimg" name="userimg" value="Portrait_Placeholder.png" placeholder="user image src"  type="text" id="category_0" required>
 
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        </div>
+        <div class="inputs">
+            <input id="subinput0" type="submit" value="Add" >
 
-        <label for="grade">Grade:</label>
-        <input type="number" id="grade" name="grade" min="1" max="12" required>
+        </div>
+       
+ 
+    </form>
 
-    <div class="btn">
-        <button type="submit">Add Student</button>
-    </div>
-    
-      </form>
-    </div>
+  
 
-    <div class="table-container">
-      <h2>Students List</h2>
-      <table id="userInfo">
-        <thead>
-          <tr class="info">
-            <th>Full Name:</th>
-            <th>Date of Birth:</th>
-            <th>Gender:</th>
-            <th>Phone Number:</th>
-            <th>Grade:</th>
-          </tr>
-        </thead>
-        <tbody id="students-list">
-        </tbody>
-      </table>
-    </div>
+    <div class="WelcomeContainer">
+      <h3>students informations</h3>
+     </div>
+
+
+<div style="min-height: 5rem;">
+  <div id="student_card">
+  </div>
+</div>
+
   </main>
 
 
